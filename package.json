@@ -1,0 +1,53 @@
+{
+  "name": "redux-fetcher-compose",
+  "version": "0.0.0",
+  "description": "Data Fetching for React and Redux application",
+  "main": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "commit": "cz",
+    "dev": "tsc -w -p tsconfig.json",
+    "prebuild": "rimraf esm",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quinhatpy/redux-fetcher-compose.git"
+  },
+  "keywords": [
+    "react data fetcher",
+    "redux toolkit",
+    "fetch api",
+    "react fetch data hook"
+  ],
+  "author": "Le Qui Nhat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quinhatpy/redux-fetcher-compose/issues"
+  },
+  "homepage": "https://github.com/quinhatpy/redux-fetcher-compose#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "abort-controller": "^3.0.0",
+    "qs": "^6.9.4",
+    "react-fast-compare": "^3.2.0",
+    "react-redux": "^7.2.2"
+  },
+  "peerDependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.5",
+    "@types/react": "^16.9.55",
+    "@types/react-redux": "^7.1.11",
+    "commitizen": "^4.2.2",
+    "react": "^17.0.1",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}

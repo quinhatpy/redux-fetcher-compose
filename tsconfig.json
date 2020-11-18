@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "noImplicitAny": false,
+    "declaration": true,
+    "declarationDir": "./esm",
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["dom", "es6", "esnext"],
+    "jsx": "react",
+    "rootDir": "src",
+    "rootDirs": ["./esm"],
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "outDir": "esm",
+    "sourceMap": true,
+    "paths": {
+      "redux-fetcher-compose/*": ["./*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["esm"]
+}
