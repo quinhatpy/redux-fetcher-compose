@@ -2,7 +2,12 @@ import { AppStateContext, AppState, AppStateOptions } from 'interfaces';
 import createStore from './create-store';
 
 const createAppState = (options: AppStateOptions): AppState => {
-  const { initialState, enableReduxDevTools, reducers, middleware } = options;
+  const {
+    initialState = {},
+    enableReduxDevTools = false,
+    reducers = {},
+    middleware = [],
+  } = options;
   let appStateContext: AppStateContext;
 
   const getAppStateContext = () => appStateContext;

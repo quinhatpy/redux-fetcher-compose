@@ -35,9 +35,9 @@ export interface StoreOptions {
 }
 
 export interface AppStateOptions {
-  enableReduxDevTools: boolean;
-  reducers: ReducersMapObject;
-  initialState: Object;
+  enableReduxDevTools?: boolean;
+  reducers?: ReducersMapObject;
+  initialState?: Object;
   middleware?: any;
 }
 
