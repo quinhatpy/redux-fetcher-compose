@@ -89,6 +89,14 @@ const createFetcherHook = <FP, RS, R, TR = R>({
     }, []);
 
     useEffect(() => {
+      const fetcherData = enhancedStore.getState()[fetcherSlice?.name];
+
+      if (!!fetcherSlice && !fetcherData) {
+        enhancedStore.registerReducer(fetcherSlice.name, fetcherSlice.reducer);
+      }
+    }, [fetcherSlice]);
+
+    useEffect(() => {
       if (shouldFetch && !defer) {
         dispatch(fetchAction(props, renewAbortController()));
       }
