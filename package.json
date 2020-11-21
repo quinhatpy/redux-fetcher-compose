@@ -1,6 +1,6 @@
 {
   "name": "redux-fetcher-compose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Data Fetching for React and Redux application",
   "main": "esm/index.js",
   "types": "esm/index.d.ts",
