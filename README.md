@@ -40,6 +40,8 @@ npm install redux-fetcher-compose
 
 ## Quick Start
 
+You can checkout example at [CodeSandbox](https://codesandbox.io/s/simple-use-redux-fetcher-compose-ed4l5)
+
 `fetcher.ts`
 
 ```typescript
